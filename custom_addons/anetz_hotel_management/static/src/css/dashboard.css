@@ -1,0 +1,76 @@
+.main-section{
+    margin:25px;
+    padding:0px;
+    background: none;
+}
+.oh_dashboards {
+    padding: 0px !important;
+    overflow: auto;
+    height: 100%;
+}
+.dash-card .card{
+    text-align:center;
+    border: 1px solid darkgray;
+    border-radius: 4px;
+    margin:20px;
+}
+
+.card::before, .card::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: red;
+  height: 4px;
+}
+
+.card::before {
+  width: 0;
+  opacity: 0;
+  transition: opacity 0 ease, width 0 ease;
+  transition-delay: 0.5s;
+}
+
+.card::after {
+  width: 100%;
+  background: white;
+  transition: width 0.5s ease;
+}
+
+.card .content {
+  width: 18em;
+  max-width: 80%;
+}
+
+.card:hover::before {
+  width: 100%;
+  opacity: 1;
+  transition: opacity 0.5s ease, width 0.5s ease;
+  transition-delay: 0;
+}
+
+.card:hover::after {
+  width: 0;
+  opacity: 0;
+  transition: width 0 ease;
+}
+
+.dash-card .card:hover {
+    cursor: pointer;
+    transform: translateY(-2px) translateZ(0) !important;
+    box-shadow: 0 10px 10px 0 rgba(62, 57, 107, 0.12), 0 0 0 transparent !important;
+}
+.dash-card .dash-count{
+    font-size:35px;
+}
+.dash-card .dash-icon-1{
+    width:100%;
+    font-size: 36px;
+    font-weight: 900;
+    margin-top:10px;
+}
+.dash-card .dash-head{
+    font-weight: 300;
+    font-size: 18px;
+}
