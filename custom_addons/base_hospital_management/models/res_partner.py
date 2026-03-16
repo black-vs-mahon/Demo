@@ -580,5 +580,8 @@ class ResPartner(models.Model):
     @api.model
     def fetch_patient_data(self):
         """Method for returning patient data"""
+        fields = ['name', 'patient_seq', 'mobile', 'email']
         return self.sudo().search_read(
-            [('patient_seq', 'not in', ['New', 'Employee', 'User'])])
+            [('patient_seq', 'not in', ['New', 'Employee', 'User'])],
+            fields
+        )
