@@ -40,7 +40,7 @@
                     <group readonly="state != 'draft'">
                         <group>
                             <field name="doctor_id"  options="{'no_create': True, 'no_edit': True}"
-                                   readonly= "is_doctor == True"/>
+                                   />
                             <field name="patient_type"/>
                             <field name="department_id"/>
                             <field name="date"/>

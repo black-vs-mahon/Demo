@@ -10,10 +10,11 @@
                    'license': 'LGPL-3',
 'depends': [
     'base',
+    'mrp',
     'account'
 ],
 'data': [
-    # 'views/account_journal.xml'
+    'views/line_discount.xml'
 ],
 'application': True,
 }

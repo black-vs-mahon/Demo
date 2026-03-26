@@ -324,7 +324,7 @@
                     <group name="order_details">
                         <field name="validity_date" invisible="state == 'sale'" readonly="state in ['cancel', 'sale']"/>
                         <div class="o_td_label" groups="base.group_no_one" invisible="state in ['sale', 'cancel']">
-                            <label for="date_order" string="Quotation Date"/>
+                            <label for="date_order" string="Quotation Date 77777777777777"/>
                         </div>
                         <field name="date_order" nolabel="1" groups="base.group_no_one" invisible="state in ['sale', 'cancel']" readonly="state in ['cancel', 'sale']"/>
                         <div class="o_td_label" invisible="state in ['draft', 'sent']">

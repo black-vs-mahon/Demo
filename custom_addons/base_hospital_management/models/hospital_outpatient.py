@@ -45,8 +45,7 @@ class HospitalOutpatient(models.Model):
                                 help='Select the doctor',
                                 required=True,
                                 domain=[('slot_remaining', '>', 0),
-                                        ('date', '=', fields.date.today()),
-                                        ('state', '=', 'confirm')])
+                                        ('date', '=', fields.date.today())])
     op_date = fields.Date(default=fields.Date.today(), string='Date',
                           help='Date of OP')
     reason = fields.Text(string='Reason', help='Reason for visiting hospital')
